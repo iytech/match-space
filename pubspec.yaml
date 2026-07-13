@@ -1,0 +1,46 @@
+name: match_space
+description: Real estate property listing platform for the Nigerian market.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Backend
+  supabase_flutter: ^2.5.6
+
+  # State management
+  provider: ^6.1.2
+
+  # Routing
+  go_router: ^14.2.0
+
+  # UI / UX
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.10+1
+  shimmer: ^3.0.0
+  fl_chart: ^0.68.0
+  smooth_page_indicator: ^1.1.0
+
+  # Media
+  image_picker: ^1.1.2
+  file_picker: ^8.0.6
+
+  # Utilities
+  intl: ^0.19.0
+  url_launcher: ^6.3.0
+  uuid: ^4.4.0
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/

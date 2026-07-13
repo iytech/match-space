@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Match Space — real estate listings for the Nigerian market.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Match Space">
+  <link rel="manifest" href="manifest.json">
+  <title>Match Space</title>
+  <style>
+    body { margin: 0; background: #FBF9F6; }
+    #loading {
+      position: fixed; inset: 0; display: flex; align-items: center;
+      justify-content: center; flex-direction: column; font-family: sans-serif;
+    }
+    .mark {
+      width: 56px; height: 56px; border-radius: 16px;
+      background: linear-gradient(135deg, #C75B39, #9E4226);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 28px; margin-bottom: 14px;
+    }
+    .spin {
+      margin-top: 18px; width: 26px; height: 26px; border: 3px solid #E7E1D8;
+      border-top-color: #C75B39; border-radius: 50%;
+      animation: r 0.9s linear infinite;
+    }
+    @keyframes r { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div id="loading">
+    <div class="mark">⌂</div>
+    <div style="font-weight:700;color:#1B1E22;font-size:18px;">Match Space</div>
+    <div class="spin"></div>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

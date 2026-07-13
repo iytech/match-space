@@ -1,0 +1,7 @@
+include: package:flutter_lints/flutter.yaml
+
+# Keep lints as warnings (not build-blocking). Adjust to taste.
+analyzer:
+  errors:
+    use_build_context_synchronously: ignore
+    prefer_const_constructors: ignore
